@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Okta Auto Login
-// @version      0.1
+// @version      0.2
 // @author       cire.pt, jk
 // @match        https://sso.cdk.com/adfs/ls/idpinitiatedsignon.aspx
 // @match        https://connectcdk.okta.com/app/UserHome
