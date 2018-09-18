@@ -4,9 +4,9 @@ if (curURL === "https://sso.cdk.com/adfs/ls/idpinitiatedsignon.aspx") {
   // auto select Okta (Prod)
   window.onload = () => {
     document.getElementById("idp_RelyingPartyDropDownList").querySelector("option[value='ae05ef51-b11c-e811-80f3-0050569214ee']").selected = true;
-    document.getElementById("idp_ThisRpRadioButton").removeAttribute("checked");
-    document.getElementById("idp_OtherRpRadioButton").setAttribute("checked", "checked");
-    document.getElementById("idp_RelyingPartyDropDownList").removeAttribute("disabled");
+    document.getElementById("idp_ThisRpRadioButton").checked = false;
+    document.getElementById("idp_OtherRpRadioButton").checked = true;
+    document.getElementById("idp_RelyingPartyDropDownList").disabled = true;
     document.getElementById("idp_GoButton").click();
   };
 } else if (curURL === "https://connectcdk.okta.com/app/UserHome") {
