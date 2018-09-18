@@ -19,7 +19,7 @@ if (curURL === "https://sso.cdk.com/adfs/ls/idpinitiatedsignon.aspx") {
   }, 1000);
 } else if (curURL === "https://portal.cobalt.com/") {
   // auto choose WSM
-  window.onload = () => {
+  setTimeout(function() {
     document.querySelector('#website p.button-container a').click();
-  };
+  }, 500);
 }
