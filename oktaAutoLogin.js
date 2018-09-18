@@ -1,4 +1,4 @@
-function octaAutoLogin() {
+function oktaAutoLogin() {
   'use strict';
 
   const curURL = window.location.href;
